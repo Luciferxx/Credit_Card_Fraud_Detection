@@ -117,7 +117,7 @@ y_prob = np.array(response["predictions"])
 - Command: `heroku version`
 
 - Next login to the Heroku CLI:
-`heroku container: login`
+`heroku container:login`
 - This command will redirect you to your default browser where you have to login.
 
 - Next, Lets create an app on Heroku using the following command:
