@@ -1,4 +1,5 @@
 # Credit_Card_Fraud_Detection
+![img](credit-card.png)
 
 # Docker Tutorial for Local Deployment of Tensorflow Model
 
