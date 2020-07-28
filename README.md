@@ -1,7 +1,47 @@
 ![img](credit-card.png)
+# Topics:
+### - Credit Card Fraud Detection with simple ML models &emsp;[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Luciferxx/Credit_Card_Fraud_Detection/blob/master/Credit%20Card%20Fraud%20Detection%20(Simple%20ML).ipynb)
+ - Loading Credit Card Transaction data
+ - Data analysis:
+     - Handling NULL values
+     - Correlation of Columns
+     - Data Scalling and Normalization
+     - Class Distribution Skewness
+ - Model Building
+     - Grid Search
+     - K-Fold
+     - Cross Validation 
+     - Models
+        - Logistic Regression
+        - K-Nearest Neighbors
+        - Support Vestor Classifier
+        - Decision Tree Classifier
+     - Learning Curves (Training Curves)
+     - ROC (Receiver Operating Characteristic)
+        
+### - Credit Card Fraud Detection using Deep Learning Techniques &emsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Luciferxx/Credit_Card_Fraud_Detection/blob/master/Credit%20Card%20Fraud%20Detection%20(Neural%20Networks).ipynb)
+  - Loading Credit Card Transaction data
+  - Data analysis:
+      - Handling NULL values
+      - Correlation of Columns
+      - Data Scalling and Normalization
+      - Class Distribution Skewness
+  - Splitting data
+  - Model
+      - 2 layered Neural Network
+      - Training Curve
+      - Validation Curve
+      - Saving trained Model for deployment
+      
+### - Deployment
+  - Docker Installation
+  - Install TF Serving Image from Docker Hub
+  - Local Deployment of trained model 
+  - Remote Deployment on Heroku
+  - Creating a REST API to use deployed model to create a Web Application
+  
 
 # Docker Tutorial for Local Deployment of Tensorflow Model
-
 ## Install Docker 
 - Kindly go to the docker website and follow installation procedures
 # SECTION 1
@@ -136,3 +176,4 @@ y_prob = np.array(response["predictions"])
 
 - Next, wondering??
  `http://<name_of_the_container>.herokuapp.com/v1/models/<name_of_model>:predict`
+ 
