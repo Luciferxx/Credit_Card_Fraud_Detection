@@ -40,24 +40,30 @@
   - Remote Deployment on Heroku
   - Creating a REST API to use deployed model to create a Web Application
   
+# Deployment:
+Docker is a reliable tool used for deployment. Tensorflow Serving Image is used to deploy trained models locally as well as to cloud platforms such as AWS, Google Cloud, Heroku etc using Docker containers.
 
-# Docker Tutorial for Local Deployment of Tensorflow Model
-## Install Docker 
-- Kindly go to the docker website and follow installation procedures
-# SECTION 1
-## Get the docker image of Tensorflow Serving from Docker Hub
+## Install Docker: 
+- For [Windows](https://docs.docker.com/docker-for-windows/install/)
+- For [MacOS](https://docs.docker.com/docker-for-mac/install/)
+- For [Linux](https://docs.docker.com/engine/install/)
 
+## Download Tensorflow Serving Image locally:
 - Open your terminal or command prompt in which docker is installed
-`docker pull tensorflow/serving`
-
-## Save your model to be deployed
  
-- Save your tensorflow serving model as .pb extension and with other dependencies by using
+  `docker pull tensorflow/serving`
 
--`tensorflow.save_model.save(model,"saved_model/1/")` 
-- model is your variable for the Keras model and saved_model is the name for the file as which it will be saved as. 
-- **1 is for the version (It is mandatory to do this otherwise your model will not be deployed)** 
-# You can skip to Section 2 for remote deployement on cloud(for free :D)
+## Download the trained model:
+- After running the 2nd Colab notebook, you will download the trained model
+- The model structure will be of the form:
+    
+      saved_model
+          |___ 1
+               |___ variables
+               |       |___ variables.data-00000-of-00001
+               |       |___ variables.index
+               |
+               |___ saved_model.pb
 
 ## Time for deployment
 
